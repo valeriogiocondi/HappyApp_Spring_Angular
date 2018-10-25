@@ -1,0 +1,26 @@
+<div id="add-question" class="sub-container">
+	<header>
+  	<span class="glyphicon glyphicon-star" aria-hidden="false"></span> 
+		<a routerLink="/questions" class="btn btn-link">
+			<i class="fas fa-arrow-left"></i>	BACK
+		</a>
+	</header>
+	<section fxLayoutAlign="center center">
+		<div class="content">
+			<header>
+				<!-- <h1 class="text-center">Add your question! </h1> -->
+			</header>
+			<section>
+				<div class="input-text-format">
+					<div class="wrap">
+						<input type="text" placeholder="What do you want ask to your employees?" (input)="onWrite($event.target.value)" />
+					</div>
+				</div>
+				<button class="btn add-question-button" type="button" *ngIf="show" (click)="sendQuestion()">
+					Add question <i class="fas fa-arrow-right"></i>
+				</button>
+				<div class="clearfix"></div>
+			</section>
+		</div>
+	</section>
+</div>

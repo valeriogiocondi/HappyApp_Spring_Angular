@@ -1,0 +1,30 @@
+<div id="questions" class="sub-container">
+	<header>
+		<input id="search-question" type="text" class="input-text" placeholder="Search your question" />
+		<a routerLink="/add-question" class="btn float-right">New question</a>
+	</header>
+	<section>
+		<div class="wrap-table">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Question</th>
+						<th>Num Answers</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let item of questions">
+						<td>{{item.id}}</td>
+						<td>{{item.text}}</td>
+						<td>{{item.numAnswers}} of {{item.totEmployers}} employees answered</td>
+						<td>
+							<button class="btn btn-small">DELETE</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</div>

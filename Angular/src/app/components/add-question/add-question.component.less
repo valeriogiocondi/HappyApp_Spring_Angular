@@ -1,0 +1,65 @@
+@import 'reset';
+@input_text_width: 350px;
+
+#add-question {
+	position: absolute;
+	right: 0px;
+	width: calc(~'100% - @{aside_width}');
+	height: 100%;
+	/*background-image: url("/assets/cute-doodles-seamless-pattern_23-2147494780.jpg");*/
+	/*background-repeat: repeat;*/
+
+	.content {
+		width: calc(~'@{input_text_width} + 0px');
+		padding: 70px 40px;
+		margin: 0px auto;
+		margin-top: 40px;
+		background-color: #FFF;
+		text-align: center;
+    box-sizing: content-box; 
+	}
+
+	header {
+		h1 {
+			font-size: 20px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+	}
+	section {
+
+		.input-text-format {
+			width: @input_text_width;
+			height: 10px;
+			margin: 0px auto;
+			margin-top: 60px;
+			padding-bottom: 5px;
+			border: solid 1px #000;
+			border-top: 0px;
+			overflow: hidden;
+
+			.wrap {
+				position: absolute;
+
+    		width: @input_text_width;
+				padding: 0px 15px;
+				margin-top: -20px;
+			}
+
+			input {
+				width: 100%;
+				color: @color_primary;
+				background-color: #FFF;
+				border: 0px;
+				text-align: center;
+			}
+		}
+
+		.add-question-button {
+			padding-left: 30px;
+			padding-right: 30px;
+			padding: 10px 80px;
+			margin-top: 30px;
+		}
+	}
+}

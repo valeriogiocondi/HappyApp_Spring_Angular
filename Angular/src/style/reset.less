@@ -1,0 +1,169 @@
+@import 'vars';
+@import url('bootstrap.min.css');
+/*@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');*/
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/solid.css');
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+body {
+	height: 100%;
+	padding: 0px;
+	
+	* {
+  	font-family: 'Open Sans', sans-serif;
+	}
+}
+.clearfix {
+	clear: both;
+}
+.sub-container {
+	padding: 20px;
+}
+
+
+.sub-container {
+
+	header {
+		padding: 20px 0px 40px 0px;
+		text-align: left;
+
+		.btn-link {
+			margin-top: 15px;
+
+			&:hover {
+				color: @color_primary;
+				text-decoration: none;
+			}
+		}
+	}
+	section {
+
+		.input-text {
+			width: 350px !important;
+		}
+	}
+}
+
+/*
+*		FORM
+*/
+
+.input-text {
+	padding: 8px 12px;
+	font-size: 14px;
+
+	border: solid 2px #EEE; 
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+}
+
+/*
+*		TABLE
+*/
+
+.wrap-table {
+
+	border: solid 1px #CCC; 
+	/*border-collapse: collapse;
+	border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	-khtml-border-radius: 5px !important;
+	overflow: hidden;*/
+	
+	.table {
+
+		margin-bottom: 0;
+		border: 0;
+
+		thead {
+			color: #555;
+			font-weight: bold;
+			background-color: @color_primary;
+			border-top: solid 2px @color_primary;
+
+			th {
+				color: @color_white;
+			}
+		}
+		tbody {
+
+			tr:nth-child(even) {
+				background-color: #F8F8F8;
+			}
+			tr {
+				&:hover {
+					background-color: #EEE;
+
+					transition: background-color 0.4s linear;
+					-moz-transition: background-color 0.4s linear;
+					-o-transition: background-color 0.4s linear;
+					-webkit-transition: background-color 0.4s linear;
+				}
+			}
+		}
+		td, th {
+			padding: 15px 15px !important;
+			font-size: 14px;
+		}
+	}
+}
+
+/*
+*		BUTTON
+*/
+
+.btn {
+	padding: 12px;
+	color: @color_white;
+	background-color: @color_primary;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&:hover {
+		color: @color_white;
+		background-color: @color_333;
+		transition: background-color 0.4s linear;
+		-moz-transition: background-color 0.4s linear;
+		-o-transition: background-color 0.4s linear;
+		-webkit-transition: background-color 0.4s linear;
+	};
+}
+
+.btn-link {
+	padding: 0px;
+	color: @color_777;
+	background-color: transparent;
+
+	&:hover {
+		color: @color_333;
+		background-color: transparent;
+		transition: color 0.2s linear;
+		-moz-transition: color 0.2s linear;
+		-o-transition: color 0.2s linear;
+		-webkit-transition: color 0.2s linear;
+	}
+}
+
+.btn-small {
+	padding: 0px 3px;
+	background-color: @color_primary;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-khtml-border-radius: 0px;
+}
+
+/*
+*		TRANSFORMATION ALL
+*/
+
+.transformation-all {
+	transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}

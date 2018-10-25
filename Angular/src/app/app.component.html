@@ -1,0 +1,41 @@
+<aside id="app-aside" class="float-left h-100">
+  <h1 class="" id="app-title">happyApp</h1>
+  <nav id="app-menu" class="align-top" id="app-menu">
+    <ul class="nav d-block">
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="">
+          <i class="fas fa-home"></i> 
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="questions">
+          <i class="fas fa-bullhorn"></i> 
+          <span>Questions</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="employees">
+          <i class="fas fa-user"></i> 
+          <span>Employees</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" routerLink="login">
+          <i class="fas fa-unlock-alt"></i> 
+          <span>Login</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" routerLink="info">
+          <i class="fas fa-info"></i> 
+          <span>Info</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<article id="app-article" class="float-right text-center" fxLayoutAlign="center">
+  <router-outlet> </router-outlet> 
+</article>
+<div class="clearfix"></div>
